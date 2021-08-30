@@ -16,23 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ow8-nk-toT">
-                                <rect key="frame" x="147" y="380" width="120" height="120"/>
-                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Qxh-EO-CNb"/>
-                                    <constraint firstAttribute="height" constant="120" id="tqB-7z-lR9"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpW-Ws-w0p">
-                                <rect key="frame" x="147" y="220" width="120" height="120"/>
-                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="LVl-LG-BZG"/>
-                                    <constraint firstAttribute="width" constant="120" id="n6h-8B-Xsd"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxi-db-9hu">
                                 <rect key="frame" x="107" y="792" width="200" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -49,26 +32,42 @@
                                     <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kqc-NP-OrF"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ow8-nk-toT">
+                                <rect key="frame" x="142" y="384" width="130" height="130"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ow8-nk-toT" secondAttribute="height" multiplier="1:1" id="ARl-Yr-3XT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpW-Ws-w0p">
+                                <rect key="frame" x="142" y="224" width="130" height="130"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tpW-Ws-w0p" secondAttribute="height" multiplier="1:1" id="4e7-7Q-Kfr"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tj6-J7-XRB">
-                                <rect key="frame" x="147" y="60" width="120" height="120"/>
+                                <rect key="frame" x="142" y="64" width="130" height="130"/>
                                 <color key="backgroundColor" red="0.91764706370000004" green="0.25490197539999998" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="4aM-yW-PVm"/>
-                                    <constraint firstAttribute="height" constant="120" id="fne-eG-SIH"/>
+                                    <constraint firstAttribute="width" secondItem="Tj6-J7-XRB" secondAttribute="height" multiplier="1:1" id="Pbl-xy-rao"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="Tj6-J7-XRB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="0oJ-L8-6LU"/>
-                            <constraint firstItem="tpW-Ws-w0p" firstAttribute="top" secondItem="Tj6-J7-XRB" secondAttribute="bottom" constant="40" id="2EY-9t-hMU"/>
-                            <constraint firstItem="ow8-nk-toT" firstAttribute="top" secondItem="tpW-Ws-w0p" secondAttribute="bottom" constant="40" id="DX5-ji-ulg"/>
-                            <constraint firstItem="tpW-Ws-w0p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SNH-n8-Ee7"/>
-                            <constraint firstItem="ow8-nk-toT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="asH-PU-Ps1"/>
-                            <constraint firstItem="Tj6-J7-XRB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cDj-wh-iuv"/>
+                            <constraint firstItem="tpW-Ws-w0p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8b9-Il-e8R"/>
+                            <constraint firstItem="Tj6-J7-XRB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AIu-Q4-suG"/>
+                            <constraint firstItem="ow8-nk-toT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L1h-fh-hck"/>
+                            <constraint firstItem="tpW-Ws-w0p" firstAttribute="top" secondItem="Tj6-J7-XRB" secondAttribute="bottom" constant="30" id="WDV-PA-PTv"/>
+                            <constraint firstItem="Tj6-J7-XRB" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="65:409" id="Wj5-Cv-fmg"/>
+                            <constraint firstItem="Tj6-J7-XRB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cbw-uc-R2b"/>
+                            <constraint firstItem="ow8-nk-toT" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="65:409" id="hf7-VD-IeF"/>
+                            <constraint firstItem="tpW-Ws-w0p" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="65:409" id="jdF-1A-d6W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mxi-db-9hu" secondAttribute="bottom" constant="20" id="tEv-Gj-m8J"/>
-                            <constraint firstItem="ow8-nk-toT" firstAttribute="height" secondItem="Tj6-J7-XRB" secondAttribute="height" id="uA3-Sa-TpI"/>
+                            <constraint firstItem="ow8-nk-toT" firstAttribute="top" secondItem="tpW-Ws-w0p" secondAttribute="bottom" constant="30" id="yu8-N3-4ZX"/>
                             <constraint firstItem="Mxi-db-9hu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zIm-93-Nk2"/>
                         </constraints>
                     </view>
